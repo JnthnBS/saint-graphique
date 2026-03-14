@@ -59,3 +59,6 @@ Et lancez docker compose:
 ```docker compose build && docker compose up -d```
 
 Le Saint-Graphique devrait être accessible à l'adresse: [http://localhost:8080](http://localhost:8080)
+
+### Avertissement
+Je ne suis pas dev, c'est juste un hobby. Une bonne partie du Javascript de la frontend a été vibecodée. Pour la backend, le recours à l'IA a été marginal.
