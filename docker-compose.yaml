@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  backend:
+    image: saint-graphique-backend
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8050:8050"
+    environment:
+    networks:
+      - app-network
+
+  frontend:
+    image: saint-graphique-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
