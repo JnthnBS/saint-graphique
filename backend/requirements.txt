@@ -1,0 +1,10 @@
+flask
+dash
+pandas
+flask_cors
+plotly
+rapidfuzz
+gunicorn
+matplotlib
+kaleido
+
