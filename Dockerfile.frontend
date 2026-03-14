@@ -1,0 +1,11 @@
+# Utiliser une image légère pour servir des fichiers statiques
+FROM nginx:alpine
+
+# Copier la configuration Nginx personnalisée
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copier le contenu du frontend dans le répertoire par défaut de Nginx
+COPY frontend/ /usr/share/nginx/html
+
+# Exposer le port 80 (par défaut pour Nginx)
+EXPOSE 80
