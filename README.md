@@ -56,4 +56,4 @@ Et lancez docker compose:
 
 ```docker compose build && docker compose up -d```
 
-Le Saint-Graphique devrait être accessible à l'adresse: [http://localhost:8080](https://github.com/JnthnBS/saint-graphique)
+Le Saint-Graphique devrait être accessible à l'adresse: [http://localhost:8080](http://localhost:8080)
