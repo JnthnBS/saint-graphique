@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LE SAINT GRAPHIQUE</title>
+    <script type="application/javascript" src="js/plotly-3.3.1.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="manifest" href="assets/manifest.json">
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="mask-icon" href="assets/mask-icon.svg" color="#fd4e23">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <!-- Formulaires -->
+    <div class="container-fluid text-center formulaires">
+      <div id="search-bars-container" class="mb-3">
+	<div id="search-bar-1" class="search-bar row align-items-center mb-2 p-2 rounded" data-role="search-bar">
+	  <div class="col-md">
+	    <label for="departement-1" class="form-label me-1">Département:</label>
+            <select id="departement-1" data-action="departement" class="form-select form-select-sm">
+	      <option value="">Choisir un département</option>
+	      <option value="100">France entière</option>
+	      <option value="01">01 - Ain</option>
+              <option value="02">02 - Aisne</option>
+              <option value="03">03 - Allier</option>
+              <option value="04">04 - Alpes-de-Haute-Provence</option>
+              <option value="05">05 - Hautes-Alpes</option>
+              <option value="06">06 - Alpes-Maritimes</option>
+              <option value="07">07 - Ardèche</option>
+              <option value="08">08 - Ardennes</option>
+              <option value="09">09 - Ariège</option>
+              <option value="10">10 - Aube</option>
+              <option value="11">11 - Aude</option>
+              <option value="12">12 - Aveyron</option>
+              <option value="13">13 - Bouches-du-Rhône</option>
+              <option value="14">14 - Calvados</option>
+              <option value="15">15 - Cantal</option>
+              <option value="16">16 - Charente</option>
+              <option value="17">17 - Charente-Maritime</option>
+              <option value="18">18 - Cher</option>
+              <option value="19">19 - Corrèze</option>
+              <option value="21">21 - Côte-d'or</option>
+              <option value="22">22 - Côtes-d'armor</option>
+              <option value="23">23 - Creuse</option>
+              <option value="24">24 - Dordogne</option>
+              <option value="25">25 - Doubs</option>
+              <option value="26">26 - Drôme</option>
+              <option value="27">27 - Eure</option>
+              <option value="28">28 - Eure-et-Loir</option>
+              <option value="29">29 - Finistère</option>
+              <option value="2A">2A - Corse-du-Sud</option>
+              <option value="2B">2B - Haute-Corse</option>
+              <option value="30">30 - Gard</option>
+              <option value="31">31 - Haute-Garonne</option>
+              <option value="32">32 - Gers</option>
+              <option value="33">33 - Gironde</option>
+              <option value="34">34 - Hérault</option>
+              <option value="35">35 - Ille-et-Vilaine</option>
+              <option value="36">36 - Indre</option>
+              <option value="37">37 - Indre-et-Loire</option>
+              <option value="38">38 - Isère</option>
+              <option value="39">39 - Jura</option>
+              <option value="40">40 - Landes</option>
+              <option value="41">41 - Loir-et-Cher</option>
+              <option value="42">42 - Loire</option>
+              <option value="43">43 - Haute-Loire</option>
+              <option value="44">44 - Loire-Atlantique</option>
+              <option value="45">45 - Loiret</option>
+              <option value="46">46 - Lot</option>
+              <option value="47">47 - Lot-et-Garonne</option>
+              <option value="48">48 - Lozère</option>
+              <option value="49">49 - Maine-et-Loire</option>
+              <option value="50">50 - Manche</option>
+              <option value="51">51 - Marne</option>
+              <option value="52">52 - Haute-Marne</option>
+              <option value="53">53 - Mayenne</option>
+              <option value="54">54 - Meurthe-et-Moselle</option>
+              <option value="55">55 - Meuse</option>
+              <option value="56">56 - Morbihan</option>
+              <option value="57">57 - Moselle</option>
+              <option value="58">58 - Nièvre</option>
+              <option value="59">59 - Nord</option>
+              <option value="60">60 - Oise</option>
+              <option value="61">61 - Orne</option>
+              <option value="62">62 - Pas-de-Calais</option>
+              <option value="63">63 - Puy-de-Dôme</option>
+              <option value="64">64 - Pyrénées-Atlantiques</option>
+              <option value="65">65 - Hautes-Pyrénées</option>
+              <option value="66">66 - Pyrénées-Orientales</option>
+              <option value="67">67 - Bas-Rhin</option>
+              <option value="68">68 - Haut-Rhin</option>
+              <option value="69">69 - Rhône</option>
+              <option value="70">70 - Haute-Saône</option>
+              <option value="71">71 - Saône-et-Loire</option>
+              <option value="72">72 - Sarthe</option>
+              <option value="73">73 - Savoie</option>
+              <option value="74">74 - Haute-Savoie</option>
+              <option value="75">75 - Paris</option>
+              <option value="76">76 - Seine-Maritime</option>
+              <option value="77">77 - Seine-et-Marne</option>
+              <option value="78">78 - Yvelines</option>
+              <option value="79">79 - Deux-Sèvres</option>
+              <option value="80">80 - Somme</option>
+              <option value="81">81 - Tarn</option>
+              <option value="82">82 - Tarn-et-Garonne</option>
+              <option value="83">83 - Var</option>
+              <option value="84">84 - Vaucluse</option>
+              <option value="85">85 - Vendée</option>
+              <option value="86">86 - Vienne</option>
+              <option value="87">87 - Haute-Vienne</option>
+              <option value="88">88 - Vosges</option>
+              <option value="89">89 - Yonne</option>
+              <option value="90">90 - Territoire de Belfort</option>
+              <option value="91">91 - Essonne</option>
+              <option value="92">92 - Hauts-de-Seine</option>
+              <option value="93">93 - Seine-Saint-Denis</option>
+              <option value="94">94 - Val-de-Marne</option>
+              <option value="95">95 - Val-d'oise</option>
+              <option value="97">97 - DROM</option>
+	    </select>
+	  </div>
+	  <div class="col-md">
+	    <label for="commune-1" class="form-label me-1">Commune:</label>
+	    <select id="commune-1" data-departement="01" class="commune-select form-select form-select-sm" disabled>
+	      <option value="">Choisir une commune</option>
+	      <!-- Options générées dynamiquement -->
+	    </select>
+	  </div>
+	  <div class="col-md">
+            <label for="objet-1" class="form-label me-1">Objet:</label>
+            <select class="form-select form-select-sm" data-action="objet" id="objet-1">
+              <option value="">Sélectionnez un objet...</option>
+              <option value="population">Population</option>
+              <option value="presidentielles">Élections présidentielles</option>
+	      <option value="europeennes">Élections européennes</option>
+	      <option value="legislatives">Élections législatives</option>
+            </select>
+	  </div>
+	  <div class="col-md">
+	    <label for="annee-1" class="form-label me-1">Année:</label>
+            <select class="form-select form-select-sm annee-select" id="annee-1">
+              <option value="">Sélectionnez une année...</option>
+            </select>
+	  </div>
+	  <div class="col-md">
+            <label for="sexe-1" class="form-label me-1">Genre:</label>
+            <select class="form-select form-select-sm sexes-select" id="sexe-1">
+              <option value="">Sélectionnez un genre</option>
+            </select>
+	  </div>	  
+	  <div class="col-md-auto">
+	  <button type="button" class="btn btn-sm remove-bar d-none" data-bar-id="1" data-action="remove">
+            <i class="bi bi-trash"></i>
+	  </button>
+	  </div>
+	</div>
+      </div>
+      <button type="button" class="btn addlayer mb-3" id="add-bar">
+	<i class="bi bi-plus"></i> Ajouter une couche
+      </button>
+      <button type="button" class="btn mb-3" id="send-requests">
+	Invoquer le Saint Graphique
+      </button>
+    </div>
+    <!-- Contenu -->
+    <div id="nav" class="h-100 container-fluid">
+      <div class="container-md">
+	<div class="row h-75 pb-5  mb-5">
+	  <a href="/"><h1>LE SAINT<br />GRAPHIQUE</h1></a>
+	</div>
+	<div class="row-md">
+	  <div id="svgContainer" >
+	  </div>
+	</div>
+	<div class="row-md pb-3 pt-3"></div>
+	<div class="row-md mt-5">
+	  <div class="card-group pt-5 mt-5">
+	    <div class="card mt-5">
+	      <div class="card-body">
+		<h4 class="card-title">C'est quoi?</h4>
+		<p class="card-text">Le Saint Graphique est une
+		  représentation de la population française, selon les
+		  Professions et Catégories Socioprofessionnelles
+		  (PCS) distribuées selon deux axes:
+		  <ul>
+		    <li>un axe de domination: plus une PCS est haute
+		      dans le graphique, plus elle est en position de
+		      domination.</li>
+		    <li>un axe du capital: plus une PCS est à droite
+		      dans le graphique, plus ses revenus sont tirés de
+		      son capital plutôt que de son travail.</li>
+		  </ul>
+		</p>
+		<p>On peut ensuite représenter les électorats sur ce
+		graphique: ils se placent en direction des PCS qui les
+		constituent.</p>
+	      </div>
+	    </div>
+	    <div class="card mt-5 no-side-borders">
+	      <div class="card-body">
+		<h4 class="card-title">Comment on s'en sert?</h4>
+		<p class="card-text">Vous devez choisir un département
+		  puis une ville dans la barre de recherche en haut de
+		  page. Le code associé à la ville est son code INSEE,
+		  et <b>non son code postal</b>.<br />Vous pouvez
+		  aussi filtrer les résultats par sexe pour les
+		  données de la population.</p>
+		<p>Vous devez ensuite choisir l'objet du graphique: la
+		  population générale ou bien un type
+		  d'élections.<br />Le Saint
+		  Graphique répondra ensuite à votre invocation.</p>
+		<p>Si vous êtes sur smartphone, passez en mode paysage
+		pour invoquer le graphique.</p>
+	      </div>
+	    </div>
+	    <div class="card mt-5">
+	      <div class="card-body">
+		<h4 class="card-title">C'est qui?</h4>
+		<p class="card-text">Le Saint Graphique a été
+		  transmis par un membre de la PaduTeam, Chris, dans
+		  <a href="https://youtu.be/MJsGgEA_Slwsi=IfVK_p2BknLdGFaD">cette
+		    vidéo</a>.<br />Vous pouvez consulter les
+		  enseignements du Saint Graphique
+		  via <a href="https://youtube.com/playlist?list=PLrY3xxT4nd05ZRw9tEIVexgLwZ0taXOzl&si=JzwSmbvosigN3THy">cette
+		    playlist</a>.</p>
+		<p>Nous n'avons aucun lien avec la
+		  Paduteam, nous essayons seulement ici de
+		  propager leurs évangiles. Leur algorithme n'ayant pas
+		  été révélé, nous avons tenté de le reproduire.</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="row mt-2">
+	  <div class="accordion" id="accordionExample">
+	    <div class="accordion-item">
+	      <h2 class="accordion-header">
+		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+		  Sources
+		</button>
+	      </h2>
+	      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+		<div class="accordion-body">
+		  <p>Voici les données utilisées:<ul>
+		      <li>Recensement 2022 pour les PCS de niveau
+		      2: <a href="https://www.insee.fr/fr/statistiques/8581559sommaire=8581612">INSEE-
+		      Emploi au lieu de travail en 2022 - EMP3 –
+		      Emplois au lieu de travail par sexe, catégorie
+		      socioprofessionnelle et secteur d'activité
+		      économique</a></li>
+		      <li>Recensement 2022 pour l'ajout des
+		      retraités: <a href="https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_RP_POPULATION_COMP">INSEE - Recensement de la population 2022 -
+		      Exploitation complémentaire</a></li>
+		      <li>Revenus et patrimoines par PCS de niveau
+		      2: <a href="DEC_POR_8.ods">INSEE - Enquête
+		      Revenus fiscaux et sociaux 2021 et Patrimoine
+		      histoire de vie, 2020-2021</a></li>
+		      <li>Diplômes obtenus par PCS de niveau 2, chez
+		      les 15-89
+		      ans: <a href="https://www.nomenclature-pcs.fr/decrire/statistiques-en-ligne">INSEE
+			  - Enquête emploi 2023</a></li>
+		      
+		      <li>Résultats des élections législatives de
+		      2024: <a href="https://www.data.gouv.fr/datasets/elections-legislatives-des-30-juin-et-7-juillet-2024-resultats-definitifs-du-1er-tour">Élections
+		      législatives des 30 juin et 7 juillet 2024 -
+		      Résultats définitifs du 1er tour</a></li>
+		      <li>Composition des électorats - législatives
+		      2024: <a href="https://www.ifop.com/article/analyse-du-premier-tour-des-elections-legislatives-2024-participation-et-structuration-des-electorats/">Analyse
+		      du premier tour des élections législatives 2024
+		      : participation et structuration des
+		      électorats</a></li>
+
+		      <li>Résultats des élections européennes de
+		      2024: <a href="https://www.data.gouv.fr/datasets/resultats-des-elections-europeennes-du-9-juin-2024">Résultats
+		      des élections européennes du 9 juin
+		      2024 </a></li>
+		      <li>Composition des électorats - européennes
+		      2024: <a href="https://www.ifop.com/article/europeennes-2024-sondage-jour-du-vote-profil-des-electeurs-et-cles-du-scrutin/">Européennes
+		      2024 – Sondage jour du vote : profil des
+			  électeurs et clés du scrutin</a></li>
+		      
+		      <li>Résultats des législatives de 2022: <a href="https://static.data.gouv.fr/resources/elections-legislatives-des-12-et-19-juin-2022-resultats-du-1er-tour/20220613-095143/resultats-par-niveau-subcom-t1-france-entiere.txt">Élections législatives des 12 et 19 juin 2022 - Résultats définitifs du premier tour</a>
+		      </li>
+		      <li>Composition des électorats des législatives de 2022: <a href="https://www.ifop.com/wp-content/uploads/2022/06/119150-rapport-jdv-leg22-t1-v1-12.06.2022-22h25-complet.pdf">LÉGISLATIVES 2022 – JOUR DU VOTE – PREMIER TOUR</a>
+		      </li>
+
+		      <li>Résultats du premier tour des élections
+		      présidentielles de
+		      2022: <a href="https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour">Datagouv
+		      - Élections présidentielles des 10 et 24 avril
+		      2022 - Résultats définitifs du 1er
+		      tour </a></li>
+		      <li>Composition des électorats lors du premier
+		      tour des élections présidentielles de
+		      2022: <a href="https://www.ifop.com/wp-content/uploads/2022/04/118997-rapport-jdv-pre22-t1-det-11.04-1.pdf">IFOP
+		      - Présidentielle 2022 – Sondage jour du vote :
+		      Profil des électeurs et clés du scrutin (1er
+			  tour)</a></li>
+
+		      <li>Résultats des européennes 2019: <a href="https://static.data.gouv.fr/resources/resultats-des-elections-europeennes-2019/20190531-144212/resultats-definitifs-par-commune.txt">DataGouv - Résultats des élections européennes 2019</a></li>
+		      <li>Composition des électorats aux européennes 2019: <a href="https://www.ifop.com/wp-content/uploads/2019/05/116339-rapport-jdv-complet-detaille_2019_05.27.pdf">IFOP - Européennes 2019 : profil des électeurs et clefs du scrutin</a>
+
+		      <li>Résultats des législatives 2017: <a href="https://static.data.gouv.fr/resources/elections-legislatives-des-11-et-18-juin-2017-resultats-par-communes-du-1er-tour/20170613-095944/Leg_2017_Resultats_communes_T1_c.xlsx">DataGouv - Élections législatives des 11 et 18 juin 2017 - Résultats par communes du 1er tour </a></li>
+		      </li>
+		      <li>Composition des électorats lors des
+			législatives 2017: <a href="https://www.ifop.com/wp-content/uploads/2018/03/3791-1-study_file.pdf">IFOP - ELECTIONS LEGISLATIVES Le profil des électeurs et les clefs du premier tour des élections législatives</a></li>
+		      
+		      <li>Résultats des présidentielles de 2017: <a href="https://www.data.gouv.fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-communes">Election présidentielle des 23 avril et 7 mai 2017 - Résultats définitifs du 1er tour par communes</a>
+		      </li>
+		      <li>Composition des électorats des présidentielles de 2017: <a href="https://www.ifop.com/wp-content/uploads/2018/03/3749-1-study_file.pdf">Le profil des électeurs et les clefs du premier tour de l’élection présidentielle</a>
+		      </li>
+		    </ul>
+		  </p>
+		</div>
+	      </div>
+	    </div>
+	    <div class="accordion-item">
+	      <h2 class="accordion-header">
+		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		  Algorithmes
+		</button>
+	      </h2>
+	      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+		<div class="accordion-body">
+		  <p>Pour obtenir les coordonnées dans le graphique de chaque PCS:<ul>
+		      <li>Pour le X:
+			<ol>
+			  <li>Patrimoine / Niveau de vie</li>
+			  <li>Classement des PCS de 1 à 30 en fonction du résultat précédent.</li>
+			  <li>Pour normaliser de -10 à 10: -10 + (20
+			  /29) * (30 - Rang obtenu précédemment)</li>
+			</ol></li>
+		      <li>Pour le Y:
+			<ol>
+			  <li>Pour chaque PCS, on calcule un score lié
+			  aux diplômes obtenus: 5 * bac+5 + 3 * bac+3
+			  + 2 * bac+2 + bac - cap - 2 * brevet - 3 *
+			  certif</li>
+			  <li>Exception pour les retraités: on leur accorde un score de -180.</li>
+			  <li>Classement des PCS de 1 à 30 en fonction du score précédent.</li>
+			  <li>Pour normaliser de -10 à 10: -10 + (20
+			  /29) * (30 - Rang obtenu précédemment)</li>
+			</ol></li></ul></p>
+		  <p>Pour les coordonnées des candidatures aux
+		    élections, on fait le barycentre de leur électorat
+		    en se basant sur la composition de leur
+		    vote.<br />Les coordonnées à pondérer sont celles
+		    des PCS de niveau 1, et les poids sont les parts
+		    de chaque PCS dans leur électorat.</p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <script type="application/javascript" src="js/graph-gen.js"></script>
+    <script type="application/javascript" src="js/forms.js"></script>
+    <script type="application/javascript" src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
