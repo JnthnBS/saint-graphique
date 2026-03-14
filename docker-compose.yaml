@@ -8,7 +8,6 @@ services:
       dockerfile: Dockerfile.backend
     ports:
       - "8050:8050"
-    environment:
     networks:
       - app-network
 
