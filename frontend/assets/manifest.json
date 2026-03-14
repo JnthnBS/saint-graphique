@@ -1,0 +1,12 @@
+{
+  "name": "Le Saint Graphique",
+  "short_name": "saintgraphique",
+  "start_url": "/index.html",
+  "icons": [{
+        "src": "/assets/google-touch-icon.png",
+        "sizes": "512x512"
+    }],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen"
+}
