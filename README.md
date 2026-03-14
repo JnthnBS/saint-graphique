@@ -2,6 +2,8 @@
 
 ![Screenshot du Saint Graphique](./saint-graphique.png)
 
+[Demo](https://saint-graphique.fedivienne.org/)
+
 ## C'est quoi?
 Le Saint Graphique est une représentation de la population française, selon les Professions et Catégories Socioprofessionnelles (PCS) distribuées selon deux axes:
 - un axe de domination: plus une PCS est haute dans le graphique, plus elle est en position de domination.
