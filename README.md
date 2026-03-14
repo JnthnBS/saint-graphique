@@ -1,21 +1,21 @@
-# saint-graphique
+# Le Saint Graphique
 
-## Le Saint Graphique
+![Screenshot du Saint Graphique](./saint-graphique.png)
 
-### C'est quoi?
+## C'est quoi?
 Le Saint Graphique est une représentation de la population française, selon les Professions et Catégories Socioprofessionnelles (PCS) distribuées selon deux axes:
 - un axe de domination: plus une PCS est haute dans le graphique, plus elle est en position de domination.
 - un axe du capital: plus une PCS est à droite dans le graphique, plus ses revenus sont tirés de son capital plutôt que de son travail.
 
 On peut ensuite représenter les électorats sur ce graphique: ils se placent en direction des PCS qui les constituent.
 
-### C'est qui?
+## C'est qui?
 Le Saint Graphique a été transmis par un membre de la PaduTeam, Chris, dans [cette vidéo](https://youtu.be/MJsGgEA_Slwsi=IfVK_p2BknLdGFaD).
 Vous pouvez consulter les enseignements du Saint Graphique via [cette playlist](https://youtu.be/MJsGgEA_Slwsi=IfVK_p2BknLdGFaD).
 
 Nous n'avons aucun lien avec la Paduteam, nous essayons seulement ici de propager leurs évangiles. Leur algorithme n'ayant pas été révélé, nous avons tenté de le reproduire.
 
-### L'algorithme
+## L'algorithme
 Pour obtenir les coordonnées dans le graphique de chaque PCS:
 * Pour le X:
   1. Patrimoine / Niveau de vie
