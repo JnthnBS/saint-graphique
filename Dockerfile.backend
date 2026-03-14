@@ -1,0 +1,21 @@
+# Utiliser une image Python officielle
+FROM python:3.9-slim
+
+# Définir le répertoire de travail
+WORKDIR /app
+
+# Copier les dépendances et les installer
+COPY backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copier les data
+COPY ./data/ /app/data
+
+# Copier le code source du backend
+COPY backend/webapp.py .
+
+# Exposer le port (Dash utilise par défaut le port 8050)
+EXPOSE 8050
+
+# Commande pour lancer l'application avec Gunicorn (recommandé pour la production)
+CMD ["gunicorn", "--bind", "0.0.0.0:8050", "webapp:server", "--workers=4", "--threads=8"]
