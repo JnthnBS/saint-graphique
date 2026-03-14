@@ -1,0 +1,211 @@
+/* Fontes */
+@font-face {
+  font-family: "Aspekta";
+  src: url("../assets/Aspekta-900.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Aspekta-light";
+  src: url("../assets/Aspekta-500.otf") format("opentype");
+  font-weight: 500;
+  font-style: light;
+}
+/* Couleurs */
+:root {
+    --rouge: #fd4e23;
+    --beige: #facc98;
+    --texte: #1d1d1b;
+}
+/* Fond d'écran */
+body {
+    background: var(--beige);
+    font-family: "Aspekta-light";
+}
+
+/* Nav */
+#nav h1,h2,h3,h4 {
+    font-family: "Aspekta";
+    text-align: center;
+    color: var(--texte);
+    text-decoration: none;
+}
+#nav {
+    background: url('../assets/background.png') center top no-repeat;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+}
+#nav .card {
+    background: rgba(250,204,152,.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--rouge);
+    text-align: justify;
+}
+#nav .no-side-borders{
+    border-left: none !important;
+    border-right: none !important;
+}
+#nav a {
+    color: var(--rouge);
+    text-decoration: none;
+}
+/* Accordéon */
+.accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-border-width: 0px;
+}
+.accordion-body, .accordion-button {
+    background: rgba(250,204,152,.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--rouge);
+    text-align: justify;
+    --bs-accordion-active-bg: var(--rouge);
+    --bs-accordion-active-color: var(--texte);
+    --bs-accordion-btn-focus-box-shadow: var(--rouge);
+    --bs-accordion-bg: none !important;
+}    
+/* Formulaires */
+.formulaires {
+    background: var(--rouge);
+    border: none;
+}
+.formulaires label {
+    color: var(--beige);
+}
+.formulaires .form-control, .formulaires select {
+    border: 2px solid var(--beige);
+}
+.formulaires .form-control:focus {
+    outline: 2px solid var(--beige);
+    box-shadow: none;
+    border: 1px solid var(--beige);
+}
+.formulaires select:focus {
+    outline: 2px solid var(--beige);
+    box-shadow: none;
+    border: 1px solid var(--beige);
+}
+.formulaires .remove-bar {
+    background: var(--beige);
+}
+.formulaires .addlayer {
+    background: none;
+    color: var(--beige);
+    border: 1px solid var(--beige);
+}
+.formulaires .addlayer:hover {
+    background: var(--beige);
+    color: var(--rouge);
+}
+.formulaires #send-requests {
+    background: var(--beige);
+    color: var(--rouge);
+}
+.formulaires #send-requests:hover {
+    background: white;
+}
+/* Formulaire en 2 colonnes */
+#geoForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Colonnes (responsive) */
+.form-column {
+    flex: 1;
+    min-width: 200px; /* Largeur minimale pour éviter l'écrasement */
+}
+.search-column {
+    flex: 5;
+}
+/* Style des labels */
+.form-column label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--beige);
+}
+/* Champ de recherche */
+.search-box {
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--beige);
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+#searchInput:focus {
+    outline: 2px solid var(--beige);
+}
+
+/* Suggestions (déjà dans ton CSS) */
+.suggestions-list {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--beige);          /* Même bordure que les inputs */
+    border-top: none;                /* Pas de bordure en haut (fusion avec l'input) */
+    border-radius: 0 0 4px 4px;      /* Arrondi en bas seulement */
+    background-color: white;         /* Fond blanc comme le formulaire */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 10;
+    display: none;                   /* Géré par JavaScript */
+    margin-top: 4px;                 /* Espacement avec l'input */
+    padding: 0;                      /* Pas de padding par défaut */
+    list-style: none;                /* Supprime les puces */
+}
+/* Select personnalisé */
+#sexeSelect {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--beige);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    appearance: none; /* Supprime le style par défaut du select */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+    padding-right: 2.5rem; /* Espace pour l'icône */
+}
+/* Bouton de soumission */
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+    flex:1;
+}
+
+.form-actions button {
+    padding: 0.75rem 1.5rem;
+    background: rgba(0,0,0,0);
+    border: 1px solid var(--beige);
+    color: var(--beige);
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+.form-actions button:hover {
+    background-color: var(--beige);
+    color: var(--rouge);
+}
+
+
+#svgContainer {
+    max-width: 100%;
+    max-height: 1400px;
+    padding-left: 0;
+}
