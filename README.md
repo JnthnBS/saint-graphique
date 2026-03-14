@@ -11,7 +11,7 @@ On peut ensuite représenter les électorats sur ce graphique: ils se placent en
 
 ## C'est qui?
 Le Saint Graphique a été transmis par un membre de la PaduTeam, Chris, dans [cette vidéo](https://youtu.be/MJsGgEA_Slwsi=IfVK_p2BknLdGFaD).
-Vous pouvez consulter les enseignements du Saint Graphique via [cette playlist](https://youtu.be/MJsGgEA_Slwsi=IfVK_p2BknLdGFaD).
+Vous pouvez consulter les enseignements du Saint Graphique via [cette playlist](https://youtube.com/playlist?list=PLrY3xxT4nd05ZRw9tEIVexgLwZ0taXOzl&si=JzwSmbvosigN3THy).
 
 Nous n'avons aucun lien avec la Paduteam, nous essayons seulement ici de propager leurs évangiles. Leur algorithme n'ayant pas été révélé, nous avons tenté de le reproduire.
 
