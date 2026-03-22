@@ -281,7 +281,11 @@ def get_graph_data():
             ajout_calque_elec(fig, coordonnees_votes, geo)
     # Une fois toutes les traces générées, on génère le layout
     largeur = requests[0]["width"]
-    hauteur = largeur * 3 / 4
+    if largeur > 900:
+        largeur = 900
+        hauteur = largeur
+    elif largeur <= 900:
+        hauteur = largeur
     fig.update_layout(
         width=largeur,
         height=hauteur,
