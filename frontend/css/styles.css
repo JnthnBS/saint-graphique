@@ -209,3 +209,6 @@ body {
     max-height: 1400px;
     padding-left: 0;
 }
+.js-plotly-plot .plotly div {
+    margin: auto;
+}
