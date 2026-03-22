@@ -174,7 +174,7 @@ def ajout_calque_pop(fig, df, geo, barycentre):
             mode="markers",
             marker= dict(
                 size=df["Part"],
-                sizeref=0.002,
+                sizeref=0.02,
                 sizemode='area',
                 symbol="circle",
                 color=df["PCS"],
@@ -198,7 +198,7 @@ def ajout_calque_pop(fig, df, geo, barycentre):
             mode="markers",
             marker= dict(
                 size=barycentre["Part"],
-                sizeref=0.002,
+                sizeref=0.02,
                 sizemode='area',
                 symbol="circle-open-dot",
                 color=barycentre["PCS"],
