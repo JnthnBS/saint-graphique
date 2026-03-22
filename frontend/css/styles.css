@@ -72,6 +72,7 @@ body {
 }
 .formulaires label {
     color: var(--beige);
+    height: 3em;
 }
 .formulaires .form-control, .formulaires select {
     border: 2px solid var(--beige);
