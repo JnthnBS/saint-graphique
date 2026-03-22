@@ -14,6 +14,13 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+    <!-- Bandeau sur mobile, pour passer en paysage" -->
+    <div class="landscape-popup" id="landscapePopup">
+      <div class="popup-content">
+	<p>Pour une meilleure visibilité du graphique, passez en mode paysage.</p>
+	<button class="popup-button" onclick="closePopup()">Continuer en portrait</button>
+      </div>
+    </div>
     <!-- Formulaires -->
     <div class="container-fluid text-center formulaires">
       <div id="search-bars-container" class="mb-3">
@@ -359,6 +366,7 @@
     </div>
     <script type="application/javascript" src="js/graph-gen.js"></script>
     <script type="application/javascript" src="js/forms.js"></script>
+    <script type="application/javascript" src="js/orientation.js"></script>
     <script type="application/javascript" src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
